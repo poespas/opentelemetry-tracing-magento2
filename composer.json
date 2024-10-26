@@ -1,0 +1,31 @@
+{
+    "name": "poespas/opentelemetry-tracing-magento2",
+    "description": "Magento 2 OpenTelemetry Tracing",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Visser",
+            "homepage": "https://poespas.me"
+        }
+    ],
+    "require": {
+        "php": "^8.1 || ^8.2 || ^8.3",
+        "jonahgeorge/jaeger-client-php":"^1.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Poespas\\OpentelemetryTracing\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
